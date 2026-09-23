@@ -1,0 +1,28 @@
+.input-group {
+  margin-bottom: 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--color-text);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  font-size: 14.5px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.input-group input:focus {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px rgba(36, 49, 107, 0.12);
+}

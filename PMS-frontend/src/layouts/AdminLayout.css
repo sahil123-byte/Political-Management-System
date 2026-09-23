@@ -1,0 +1,47 @@
+.admin-layout {
+    display: flex;
+    background: var(--color-bg);
+    min-height: 100vh;
+}
+
+.admin-content {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main-content {
+    padding: var(--space-6);
+    flex: 1;
+    min-width: 0;
+}
+
+.sidebar-backdrop {
+    display: none;
+}
+
+/* ---- Mobile: sidebar becomes an off-canvas drawer ---- */
+@media (max-width: 900px) {
+    .admin-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 20, 36, 0.5);
+        z-index: 90;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-content {
+        padding: var(--space-4);
+    }
+}

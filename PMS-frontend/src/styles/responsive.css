@@ -1,0 +1,40 @@
+/* Cross-cutting responsive rules that apply across the whole app,
+   on top of each component's own responsive CSS. */
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 11px;
+    padding: 0 var(--space-3);
+    text-align: center;
+  }
+
+  .dashboard-icon,
+  .report-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .dashboard-card h2,
+  .report-card h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .modal-footer button {
+    width: 100%;
+  }
+}

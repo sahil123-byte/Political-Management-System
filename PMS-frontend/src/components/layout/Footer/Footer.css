@@ -1,0 +1,15 @@
+.footer {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+.footer p {
+    color: var(--color-text-soft);
+    font-size: 13px;
+    margin: 0;
+}
